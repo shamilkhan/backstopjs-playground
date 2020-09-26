@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "backstopjs": "backstop test --docker",
+    "backstopjs": "backstop test",
     "backstopjs:approve": "backstop approve --docker"
   },
   "eslintConfig": {
