@@ -24,6 +24,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: yarn add
-    - run: yarn run start
-    - run: yarn backstopjs
+      with: 
+        cmd: install
+        cmd: start
+        cmd: backstopjs
