@@ -28,17 +28,8 @@ jobs:
       name: "install dependencies"
       with:
         cmd: install
-    - uses: borales/actions-yarn@v2.0.0
-      name: "backstopjs"
-      with:
-        cmd: run backstopjs && echo 'passed' || echo 'failed'
-    - uses: borales/actions-yarn@v2.0.0
-      name: "backstopjs:approve"
-      with:
-        cmd: run backstopjs:approve
-    - uses: borales/actions-yarn@v2.0.0
-      name: "backstopjs"
-      with:
-        cmd: run backstopjs
-    # - name: test backstop
-    #   run: ./node_modules/.bin/backstop test && echo 'passed' || echo 'failed'
+    - name: test backstop
+      run: ./node_modules/.bin/backstop test && echo 'passed' || echo 'failed'
+      run: ./node_modules/.bin/backstop test --approve
+      run: ./node_modules/.bin/backstop test
+      
