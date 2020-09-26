@@ -35,6 +35,6 @@ jobs:
         cmd: run backstopjs:approve
     - uses: borales/actions-yarn@v2.0.0
       with:
-        cmd: run backstop && echo 'passed' || echo 'failed'
+        cmd: run backstop
     # - name: test backstop
     #   run: ./node_modules/.bin/backstop test && echo 'passed' || echo 'failed'
