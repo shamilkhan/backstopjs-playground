@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "backstopjs": "backstop test",
-    "backstopjs:approve": "backstop approve --docker"
+    "backstopjs:approve": "backstop approve"
   },
   "eslintConfig": {
     "extends": "react-app"
