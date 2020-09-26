@@ -28,4 +28,4 @@ jobs:
       with:
         cmd: install # will run `yarn install` command
     - name: Build the Docker image
-      run: ./node_modules/.bin/backstop test --docker
+      run: ./node_modules/.bin/backstop test --approve --docker
