@@ -28,6 +28,6 @@ jobs:
       with:
         cmd: install # will run `yarn install` command
     - name: test backstop
-      run: ./node_modules/.bin/backstop test --docker && echo 'passed' || echo 'failed'
+      run: ./node_modules/.bin/backstop test && echo 'passed' || echo 'failed'
     - name: test backstop and approve
       run: ./node_modules/.bin/backstop test --approve --docker
