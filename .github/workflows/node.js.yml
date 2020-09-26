@@ -31,4 +31,3 @@ jobs:
     - name: test backstop
       run: ./node_modules/.bin/backstop test && echo 'passed' || echo 'failed'  && 
       ./node_modules/.bin/backstop test --approve && ./node_modules/.bin/backstop test
-      
