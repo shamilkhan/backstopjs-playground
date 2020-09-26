@@ -31,7 +31,7 @@ jobs:
     - uses: borales/actions-yarn@v2.0.0
       name: "backstopjs"
       with:
-        cmd: run backstop && echo 'passed' || echo 'failed'
+        cmd: run backstopjs && echo 'passed' || echo 'failed'
     - uses: borales/actions-yarn@v2.0.0
       name: "backstopjs:approve"
       with:
@@ -39,6 +39,6 @@ jobs:
     - uses: borales/actions-yarn@v2.0.0
       name: "backstopjs"
       with:
-        cmd: run backstop
+        cmd: run backstopjs
     # - name: test backstop
     #   run: ./node_modules/.bin/backstop test && echo 'passed' || echo 'failed'
