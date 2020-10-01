@@ -18,7 +18,7 @@
     {
       "label": "BackstopJS Homepage",
       "cookiePath": "backstop_data/engine_scripts/cookies.json",
-      "url": "http://garris.github.io/",
+      "url": "https://catapulto.ru/registerguid/",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -42,13 +42,13 @@
     "html_report": "backstop_data/html_report",
     "ci_report": "backstop_data/ci_report"
   },
-  "report": ["CI"],
+  "report": ["html", "CI"],
   "engine": "puppeteer",
   "engineOptions": {
     "args": ["--no-sandbox"]
   },
   "asyncCaptureLimit": 5,
   "asyncCompareLimit": 50,
-  "debug": false,
+  "debug": true,
   "debugWindow": false
 }
